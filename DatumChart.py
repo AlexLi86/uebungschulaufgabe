@@ -75,7 +75,7 @@ class DatumChart(QChartView):
 
 
 
-
+        #werte für 2te series hinzufügen
         self.series2.append(QDateTime.currentDateTime().addDays(-9).toMSecsSinceEpoch(), 4)
         self.series2.append(QDateTime.currentDateTime().addDays(-8).toMSecsSinceEpoch(), 5)
         self.series2.append(QDateTime.currentDateTime().addDays(-7).toMSecsSinceEpoch(), 6)
