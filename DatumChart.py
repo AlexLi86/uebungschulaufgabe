@@ -103,6 +103,7 @@ class DatumChart(QChartView):
         axis_x.setTickCount(10)  # Anzahl der Datenpunkte (Tage)
         axis_x.setFormat("dd.MM")  # Format des Datums
         axis_x.setTitleText("Datum")
+        axis_x.setTitleBrush(QColor("green"))
 
         start_date = QDateTime.currentDateTime()
         end_date = QDateTime.currentDateTime().addDays(-9)
@@ -110,6 +111,7 @@ class DatumChart(QChartView):
 
         #achsen andere farbe
         axis_x.setLabelsColor(QColor("blue"))
+        axis_y.setLabelsColor(QColor("white"))
 
         #grid farbe ändern
         pen_grid = QPen(QColor("red"))
@@ -134,6 +136,9 @@ class DatumChart(QChartView):
         self.series.append(QDateTime.currentDateTime().addDays(-7).toMSecsSinceEpoch(), 3)
         self.series.append(QDateTime.currentDateTime().addDays(-6).toMSecsSinceEpoch(), 4)
 
+
+
+
         self.series2.append(QDateTime.currentDateTime().addDays(-9).toMSecsSinceEpoch(), 4)
         self.series2.append(QDateTime.currentDateTime().addDays(-8).toMSecsSinceEpoch(), 5)
         self.series2.append(QDateTime.currentDateTime().addDays(-7).toMSecsSinceEpoch(), 6)
@@ -141,8 +146,7 @@ class DatumChart(QChartView):
 
 
         #hintergrund farbe ändern
-        gruener_hintergrund = QBrush(QColor(0, 255, 0))  # RGB für Grün
-        self.chart.setBackgroundBrush(gruener_hintergrund)
+        self.chart.setBackgroundBrush(QColor("black"))
 
         #chart anzeigen
         self.setChart(self.chart)
