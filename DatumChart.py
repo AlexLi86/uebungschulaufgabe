@@ -25,7 +25,8 @@ class DatumChart(QChartView):
 
         #chart erstellt und series hinzufgefügt
         self.chart = QChart()
-        self.chart.setTitle("Karte")
+        self.chart.setTitle("2te Chart")
+        self.chart.setTitleBrush(QColor("green"))
         self.chart.addSeries(self.series)
         self.chart.addSeries(self.series2)
 
