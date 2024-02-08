@@ -9,7 +9,7 @@ class DatumChart(QChartView):
 
         #series erstellt
         self.series = QLineSeries()
-        self.series2 = QLineSeries()
+        self.series2 = QSplineSeries()
         self.series.setName("Series")
         self.series2.setName("Series2")
 

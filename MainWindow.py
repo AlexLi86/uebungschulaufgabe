@@ -10,6 +10,7 @@ class MainWindow(QMainWindow):
 
         self.setCentralWidget(self.central_widget)
 
-
+        self.setMinimumSize(1000, 500)
+        self.setMaximumSize(1500, 750)
         #Überschrift des kompletten Feld
         self.setWindowTitle("Chart Indiana")
