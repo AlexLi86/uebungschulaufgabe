@@ -82,6 +82,15 @@ class DatumChart(QChartView):
         self.series2.append(QDateTime.currentDateTime().addDays(-7).toMSecsSinceEpoch(), 6)
         self.series2.append(QDateTime.currentDateTime().addDays(-6).toMSecsSinceEpoch(), 7)
 
+        #Manuel datum hinzufügen
+        #self.series2.append(QDateTime(2024, 2, 1, 0, 0).toMSecsSinceEpoch(), 3.5)
+        #self.series2.append(QDateTime(2025, 2, 9, 0, 0).toMSecsSinceEpoch(), 4.0)
+        #self.series2.append(QDateTime(2026, 2, 5, 0, 0).toMSecsSinceEpoch(), 5.5)
+        #self.series2.append(QDateTime(2027, 2, 6, 0, 0).toMSecsSinceEpoch(), 4.0)
+        #self.series2.append(QDateTime(2028, 2, 7, 0, 0).toMSecsSinceEpoch(), 6.0)
+        #self.series2.append(QDateTime(2029, 2, 3, 0, 0).toMSecsSinceEpoch(), 9.0)
+        #self.series2.append(QDateTime(2030, 2, 5, 0, 0).toMSecsSinceEpoch(), 3.5)
+
 
         #hintergrund farbe ändern
         self.chart.setBackgroundBrush(QColor("black"))
